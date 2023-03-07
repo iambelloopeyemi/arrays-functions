@@ -70,8 +70,8 @@ e.g., max([4, 5, 10, -2]) // maximum value is 10
 */
 
 function value(a, b, c, d) {
-  let result = Math.max(a, b, c, d);
-  return result;
+  return Math.max(a, b, c, d);
+  
 }
 
 const maximumValue = value(4, 5, 10, -2);
@@ -83,11 +83,10 @@ e.g.,
  valTimesIndex([5,10,15]) // [0,10,30]
 */
 
-let index = 2;
+const arrayOfNumber = [1, 2, 3, 4]
 
-let valTimesIndex = [1, 2, 3, 4].map(function (num) {
-  let result = num * index;
-  return result;
+const valTimesIndex = arrayOfNumber.map(function (num, index) {
+  return num * index;
 });
 
 console.log(valTimesIndex);
